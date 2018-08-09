@@ -9,48 +9,54 @@
     <link rel="stylesheet" href="./style.css">
     <script src="design.js"></script>
 </head>
-<body> 
-    <header>
+<body class="mainPage"> 
+    <header class="mainPage__header">
         <div>
-            <div>
-                <h1>Stack Overflow-Lite</h1>
+            <div class="navBar">
+                <h1 class="navBar__heading">Stack Overflow-Lite</h1>
             </div>
-            <nav class="navBar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="profile.html">Profile</a></li>
+            <nav class="navBar__ulList">
+                <ul class=>
+                    <li class="navBar__list"><a class="navBar__list--listItem" href="index.html">Home</a></li>
+                    <li class="navBar__list"><a class="navBar__list--listItem" href="dashboard.html">Dashboard</a></li>
+                    <li class="navBar__list"><a class="navBar__list--listItem" href="profile.html">Profile</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section>
-        <div class="content">
-            <table id="signin">
+        <div class="mainPage__content">
+            <table id="signIn">
                 <tbody>
-                    <th>Sign in</th>
-                    <tr>
-                        <td><input type="text" name="user name" placeholder="username or mail"></td>
+                    <th class="signIn__heading">Sign in</th>
+                    <tr class="signIn__row">
+                        <td class="signIn__data"><input type="text" name="user name" placeholder="username or mail"></td>
                     </tr>
-                    <tr>
-                        <td><input type="password" name="Psw" placeholder="Password"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="submit" value="sign in"></td>
+                    <tr class="signIn__row">
+                        <td class="signIn__data"><input type="password" name="Psw" placeholder="Password"></td>
+                    </tr class="signIn__row">
+                    <tr class="signIn__row">
+                        <td class="signIn__data" colspan="2"><input type="submit" value="sign in"></td>
                     </tr>    
 
-                    <tr>
-                        <td>Dont have an account? <a href="signup.html">Sign up</a></td>
+                    <tr class="signIn__row">
+                        <td class="signIn__data">Dont have an account? <a href="signup.html">Sign up</a></td>
                     </tr>
                 </tbody>
             </table>
-
         </div>
     </section>
-
-    <footer id="myFooter">
+    <div class="description">
+        <h2>
+            For the curious!
+        </h2>
         <p>
+            Ask questions, seek clarification, be enlightened then repeat...
+        </p>
+    </div>
+    <footer>
+        <p id="myFooter">
             all rights reserved &copy; 2018
         </p>
     </footer>

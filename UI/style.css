@@ -1,33 +1,28 @@
 /* manipulates whole page */
-body{
+
+.mainPage{
     font: 1em/1.5 sans-serif, Arial;
     padding: 3% 10% 10% 10%;
     margin:0%;
     background: url("images/homePage.jpg") no-repeat center;
-    color: beige
+    color: #ffffff
 }
-
-div .content{
-    padding: 10px 0% 3% 0%; 
-    overflow: hidden;
-    margin: auto;
-}
-
 /* manipulates elements in the navigation bar */
-header{
+
+.mainPage__header{
     background-color: rgb(25, 36, 48);
     margin: auto;
-    color:  #ffffff;
-    padding: 30px;
+    padding: 5px;
     border: 2px rgb(100, 100, 30) solid;
 }
-header h1{
+
+.navBar__heading{
     text-align: left;
     padding: 0px 0px 0px 5px;
     font-size: 3em
 }
 
-header a{
+.navBar__list--listItem{
     color: #ffffff;
     text-decoration: none;
     padding:0px 0px 0px 5px
@@ -36,21 +31,60 @@ header a{
 header ul{
     text-align: right;
     margin: auto;
-    padding: 0% 0% 0% 10%;
+    padding: 0% 0% 0% 50%;
 }
-header li{
+
+.navBar__list{
     display: inline;
 }
-input{
-    width: 20%;
-    padding: 10px 10px;
-    margin: 5px 0px;
+
+#signIn #signUp{
+    margin: 20px 0;
+    width: 50%;
+    float: right;
 }
-input[type="submit"]{
-    width: 10%
-    text-align: centre;
+
+#signIn__heading #signUp__heading{
+    text-align: center;
 }
-.content input{
-    width: 100%;
-    clear: right;
+
+.signIn__row .signIn__row{
+    text-align: center;
+}
+
+.signIn__data .signUp__data{
+    width: 200px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+    width: 300px;
+    height: 30px;
+}
+
+input[type="submit"] {
+    width:150px;
+    border-radius: 5px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0.8em;
+}
+.description{
+    padding: 40% 0% 0% 0%;
+    text-align: center;
+    
+}
+#myFooter{
+    text-align: center;
+    font-size: 20px;
+    padding: 30% 0% 0% 0%;
+    text-decoration-line: underline;
+}
+.signUpPage{
+    font: 2em/1.5 sans-serif, Arial;
+    padding: 3% 10% 10% 10%;
+    margin:0%;
+    background-color: gray;
+    color: #ffffff;
+    align-content: center;
 }

@@ -9,33 +9,47 @@
     <link rel="stylesheet" href="./style.css">
     <script src="design.js"></script>
 </head>
-<body>
-    <div class="content">
-            <table id="signup">
+<body class="signUpPage">
+        <header class="mainPage__header">
+                <div>
+                    <div class="navBar">
+                        <h1 class="navBar__heading">Stack Overflow-Lite</h1>
+                    </div>
+                    <nav class="navBar__ulList">
+                        <ul class=>
+                            <li class="navBar__list"><a class="navBar__list--listItem" href="index.html">Home</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+    <div >
+            <table id="signUp">
                 <tbody>    
-                    <tr><th>Sign up for a new member</th></tr>
                     <tr>
-                        <td> Name:</td>
-                        <td><input type="text" name="your name" placeholder="Name"></td>
+                        <th class="signUp__heading">Sign up for a new member</th>
                     </tr>
-                    <tr>
-                        <td>Your email:</td>
-                        <td><input type="email" name="email" placeholder="e-mail"></td>
+                    <tr class="signUp__row">
+                        <td class="signUp__data"> Name:</td>
+                        <td class="signUp__data"><input type="text" name="your name" placeholder="Name"></td>
                     </tr>
-                    <tr>
-                        <td>Birthday:</td>
-                        <td><input type="date" name="bday"></td>
+                    <tr class="signUp__row">
+                        <td class="signUp__data">Your email:</td>
+                        <td class="signUp__data"><input type="email" name="email" placeholder="e-mail"></td>
                     </tr>
-                    <tr>
-                        <td>Set Password:</td>
-                        <td><input type="password" name="Psw" placeholder="set password"></td>
+                    <tr class="signUp__row">
+                        <td class="signUp__data">Birthday:</td>
+                        <td class="signUp__data"><input type="date" name="bday"></td>
                     </tr>
-                    <tr>
-                        <td>confirm password:</td>
-                        <td><input type="password" name="Psw" placeholder="confirm password"></td>
+                    <tr class="signUp__row">
+                        <td class="signUp__data">Set Password:</td>
+                        <td class="signUp__data"><input type="password" name="Psw" placeholder="set password"></td>
                     </tr>
-                    <tr>
-                        <td colspan="2"><input type="submit" value="Submit"></tr></td>
+                    <tr class="signUp__row">
+                        <td class="signUp__data">confirm password:</td>
+                        <td class="signUp__data"><input type="password" name="Psw" placeholder="confirm password"></td>
+                    </tr>
+                    <tr class="signUp__row">
+                        <td class="signUp__data" colspan="2"><input type="submit" value="Submit"></tr></td>
                     </tr>
                         
                 </tbody>
