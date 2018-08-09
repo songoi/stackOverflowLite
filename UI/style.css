@@ -1,0 +1,56 @@
+/* manipulates whole page */
+body{
+    font: 1em/1.5 sans-serif, Arial;
+    padding: 3% 10% 10% 10%;
+    margin:0%;
+    background: url("images/homePage.jpg") no-repeat center;
+    color: beige
+}
+
+div .content{
+    padding: 10px 0% 3% 0%; 
+    overflow: hidden;
+    margin: auto;
+}
+
+/* manipulates elements in the navigation bar */
+header{
+    background-color: rgb(25, 36, 48);
+    margin: auto;
+    color:  #ffffff;
+    padding: 30px;
+    border: 2px rgb(100, 100, 30) solid;
+}
+header h1{
+    text-align: left;
+    padding: 0px 0px 0px 5px;
+    font-size: 3em
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    padding:0px 0px 0px 5px
+}
+
+header ul{
+    text-align: right;
+    margin: auto;
+    padding: 0% 0% 0% 10%;
+}
+header li{
+    display: inline;
+}
+input{
+    width: 20%;
+    padding: 10px 10px;
+    margin: 5px 0px;
+}
+input[type="submit"]{
+    width: 10%
+    text-align: centre;
+}
+.content input{
+    width: 100%;
+    clear: right;
+}
