@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>sign up|Stack Overflow-lite</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <script src="design.js"></script>
 </head>
-<body class="signUpPage">
+<body id="signUpPage">
         <header class="mainPage__header">
                 <div>
                     <div class="navBar">
@@ -23,37 +23,42 @@
                 </div>
             </header>
     <div >
-            <table id="signUp">
-                <tbody>    
-                    <tr>
-                        <th class="signUp__heading">Sign up for a new member</th>
-                    </tr>
-                    <tr class="signUp__row">
-                        <td class="signUp__data"> Name:</td>
-                        <td class="signUp__data"><input type="text" name="your name" placeholder="Name"></td>
-                    </tr>
-                    <tr class="signUp__row">
-                        <td class="signUp__data">Your email:</td>
-                        <td class="signUp__data"><input type="email" name="email" placeholder="e-mail"></td>
-                    </tr>
-                    <tr class="signUp__row">
-                        <td class="signUp__data">Birthday:</td>
-                        <td class="signUp__data"><input type="date" name="bday"></td>
-                    </tr>
-                    <tr class="signUp__row">
-                        <td class="signUp__data">Set Password:</td>
-                        <td class="signUp__data"><input type="password" name="Psw" placeholder="set password"></td>
-                    </tr>
-                    <tr class="signUp__row">
-                        <td class="signUp__data">confirm password:</td>
-                        <td class="signUp__data"><input type="password" name="Psw" placeholder="confirm password"></td>
-                    </tr>
-                    <tr class="signUp__row">
-                        <td class="signUp__data" colspan="2"><input type="submit" value="Submit"></tr></td>
-                    </tr>
-                        
-                </tbody>
-            </table>
+        <table id="signUp__table">
+            <tbody>    
+                <tr>
+                    <th class="signUp__heading">Sign up for a new member</th>
+                </tr>
+                <tr class="signUp__row">
+                    <td class="signUp__data"> Name:</td>
+                    <td class="signUp__data"><input type="text" name="your name" placeholder="Name"></td>
+                </tr>
+                <tr class="signUp__row">
+                    <td class="signUp__data">Your email:</td>
+                    <td class="signUp__data"><input type="email" name="email" placeholder="e-mail"></td>
+                </tr>
+                <tr class="signUp__row">
+                    <td class="signUp__data">Birthday:</td>
+                    <td class="signUp__data"><input type="date" name="bday"></td>
+                </tr>
+                <tr class="signUp__row">
+                    <td class="signUp__data">Set Password:</td>
+                    <td class="signUp__data"><input type="password" name="Psw" placeholder="set password"></td>
+                </tr>
+                <tr class="signUp__row">
+                    <td class="signUp__data">confirm password:</td>
+                    <td class="signUp__data"><input type="password" name="Psw" placeholder="confirm password"></td>
+                </tr>
+                <tr class="signUp__row">
+                    <td class="signUp__data" ><input type="submit" value="Submit"></tr></td>
+                </tr>
+                    
+            </tbody>
+        </table>
     </div>
+    <footer>
+        <p id="myFooter">
+            all rights reserved &copy; 2018
+        </p>
+    </footer>
 </body>
 </html>
