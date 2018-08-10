@@ -6,10 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Profile|Stack Overflow-lite</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <script src="design.js"></script>
 </head>
-<body>
-    
+<body id="userProfilePage">
+    <header class="mainPage__header">
+        <div>
+            <div class="navBar">
+                <h1 class="navBar__heading">Stack Overflow-Lite</h1>
+            </div>
+            <nav class="navBar__ulList">
+                <ul>
+                    <li class="navBar__list"><a class="navBar__list--listItem" href="index.html">Home</a></li>
+                    <li class="navBar__list"><a class="navBar__list--listItem" href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="Profile__page" class="row">
+        <div class="userProfile__accountInfo"  class="Profile__column">
+            <div class="userProfile__image">
+                <img src="../images/user_icon.png">
+            </div>
+
+            <div class="Profile__column">    
+                <table class="userProfile__table">
+                    <tbody>
+                        <legend class="columnHead">User Name</legend>
+                        <tr>Questions you Asked:0</a></tr><br>
+                        <tr>Answers you Posted:0</a> </tr><br>
+                    </tbody>
+                </table>
+                <nav>
+                    <button class="userProfile__button" type="button">Recently Asked Questions on stack</button>
+                </nav>
+            </div>
+        </div>
+
+        <div class="userProfile__posts" class="Profile__column">
+            <div class="userProfile__questions">
+                <table>
+                    <tbody>
+                        <th class="columnHead">Questions</th>
+                        <tr class="columnData">
+                            <td>
+                                contains questions asked by the user overtime<br>
+                                <button class="userProfile__button" type="button">view answers</button> <button class="userProfile__button" type="button">Delete question</button> 
+                            </td>
+                        </tr>
+                        
+                        <tr class="columnData">
+                            <td>
+                                contains questions asked by the user overtime<br>
+                                <button class="userProfile__button" type="button">view answers</button> <button class="userProfile__button" type="button">Delete question</button> 
+                            </td>
+                        </tr>
+                        
+                        <tr class="columnData">
+                            <td>
+                                contains questions asked by the user overtime<br>
+                                <button class="userProfile__button" type="button">view answers</button> <button class="userProfile__button" type="button">Delete question</button> 
+                            </td>
+                        </tr>
+
+                        <tr class="columnData">
+                            <td>
+                                contains questions asked by the user overtime<br>
+                                <button class="userProfile__button" type="button">view answers</button> <button class="userProfile__button" type="button">Delete question</button> 
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="userProfile__answers" class="Profile__column">
+                <table>
+                    <tbody>
+                        <th class="columnHead">Answers</th>
+                        <tr>
+                            <td>
+                                contains answer on a question asked by the user<br>
+                                <button class="userProfile__button" type="button">Accept answer</button> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                contains answer on a question asked by the user<br>
+                                <button class="userProfile__button" type="button">Accept answer</button> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                contains answer on a question asked by the user<br>
+                                <button class="userProfile__button" type="button">Accept answer</button> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                contains answer on a question asked by the user<br>
+                                <button class="userProfile__button" type="button">Accept answer</button> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="myFooter">
+            all rights reserved &copy; 2018
+        </p>
+    </footer>
 </body>
 </html>
