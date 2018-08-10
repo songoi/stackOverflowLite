@@ -1,11 +1,61 @@
 /* manipulates whole page */
 
-.mainPage{
+#mainPage{
     font: 1em/1.5 sans-serif, Arial;
     padding: 3% 10% 10% 10%;
     margin:0%;
-    background: url("images/homePage.jpg") no-repeat center;
-    color: #ffffff
+    background: url("../images/homePage.jpg") no-repeat;
+    color: #ffffff;
+}
+#signUpPage{
+    font: 2em/1.5 sans-serif, Arial;
+    padding: 3% 10% 10% 10%;
+    margin:0%;
+    background-color: gray;
+    color: #ffffff;
+    align-content: center;
+}
+#dashboardPage{
+    font: 1em/1.5 sans-serif, Arial;
+    background-color: gray;
+    color: #ffffff;
+    align-content: center;
+}
+.dashboard{
+    padding: 0% 10% 10% 10%;
+    margin:auto;
+}
+
+.dashboard__content{
+    border: 2px rgb(100, 100, 30) solid;
+    border-radius: 5px;
+    padding: 2%
+}
+.dashboard__table{
+    border: 3px burlywood solid;
+    border-radius: 2.5px;
+    width: 450px;
+    text-align: center;
+    font-size: 1.5em;
+}
+#questionBox{
+    float: right;
+    padding: 3%;
+    margin: 3%;
+    border: 5px outset;
+
+}
+.questionBox__item{
+    padding: 13%;
+}
+.columnHead{
+    font-size: 100%;
+    font-style: bold;
+    text-decoration: underline;
+}
+.column__Info--listItem{
+    display: inline;
+    color: lavenderblush;
 }
 /* manipulates elements in the navigation bar */
 
@@ -39,13 +89,14 @@ header ul{
 }
 
 #signIn #signUp{
-    margin: 20px 0;
+    margin: 20px;
     width: 50%;
-    float: right;
+    float: left;
 }
 
-#signIn__heading #signUp__heading{
+.signIn__heading .signUp__heading{
     text-align: center;
+    font-size: 2em;
 }
 
 .signIn__row .signIn__row{
@@ -62,29 +113,22 @@ input[type="text"], input[type="email"], input[type="password"], input[type="dat
 }
 
 input[type="submit"] {
-    width:150px;
+    width: 50%;
     border-radius: 5px;
-    background-color: black;
+    background-color: rgb(205, 195, 221);
     color: #ffffff;
     font-size: 16px;
-    padding: 0.8em;
+    padding: 03%;
 }
 .description{
-    padding: 40% 0% 0% 0%;
-    text-align: center;
+    padding: 20% 0% 0% 0%;
+    text-align: right;
     
 }
 #myFooter{
     text-align: center;
     font-size: 20px;
-    padding: 30% 0% 0% 0%;
+    padding: 22% 0% 0% 0%;
     text-decoration-line: underline;
-}
-.signUpPage{
-    font: 2em/1.5 sans-serif, Arial;
-    padding: 3% 10% 10% 10%;
-    margin:0%;
-    background-color: gray;
-    color: #ffffff;
-    align-content: center;
+    margin: 0%;
 }

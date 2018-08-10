@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../styles/style.css">
     <script src="design.js"></script>
 </head>
-<body>
+<body id="dashboardPage">
     <header class="mainPage__header">
         <div>
             <div class="navBar">
@@ -17,202 +17,151 @@
                 <h2 class="navBar__dashboard"> Dashboard</h2>
             </div>
             <nav class="navBar__ulList">
-                <ul class=>
+                <ul>
                     <li class="navBar__list"><a class="navBar__list--listItem" href="index.html">Home </a></li>
                     <li class="navBar__list"> <input type="text" placeholder="Search.."></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="Dashboard">
-        <div>
-            <form action="">
-                <legend>Ask a question</legend>
-                <input type="text" maxlength="500" size="500" placeholder="your question"><br>
+    <div class="dashboard">
+        <div id="questionBox">
+            <form  action="">
+                <legend>Ask a question</legend><br>
+                <input type="text" max-length="500" size="500" placeholder="your question"><br>
                 <input type="submit" value="Post question">
             </form>
         </div>
         <section>
-            <div>
-                <table>
+            <div class="dashboard__content">
+                <table class="dashboard__table">
                     <tbody>
-                        <th>Trending Questions</th>
-                        <tr>
+                        <th class="columnHead">Trending Questions</th>
+                        <tr class="column__info">
                             <td>
                                 what is the finobacci sequence?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="column__info">
                             <td>
                                 what is a ponzi scheme?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="column__info">
                             <td>
                                 what is the finobacci sequence?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="column__info">
                             <td>
                                 what is the finobacci sequence?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="column__info">
                             <td>
                                 what is a ponzi scheme?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="column__info">
                             <td>
                                 what is the finobacci sequence?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                                   <tr>
                             <td>
                                 what is the finobacci sequence?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="column__info">
                             <td>
                                 what is a ponzi scheme?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="column__info">
                             <td>
                                 what is the finobacci sequence?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="column__info">
                             <td>
                                 what is the finobacci sequence?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="column__info">
                             <td>
                                 what is a ponzi scheme?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="column__info">
                             <td>
                                 what is the finobacci sequence?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="column__info">
                             <td>
                                 what is the finobacci sequence?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                what is a ponzi scheme?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                what is the finobacci sequence?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                what is the finobacci sequence?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
-                                </ul>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                what is a ponzi scheme?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                what is the finobacci sequence?<br>
-                                <ul>
-                                    <li>asked by:<a href="user.name">UserName</a></li>
-                                    <li><a href="answers">view posted answers</a></li>
-                                    <li><a href="user.input">post your answer</a></li>
+                                <ul class="column__info--list">
+                                    <li>asked by:<a class="column__info--listItem" href="user.name">UserName</a></li>
+                                    <li><a class="column__info--listItem" href="answers">view posted answers</a></li>
+                                    <li><a class="column__info--listItem" href="user.input">post your answer</a></li>
                                 </ul>
                             </td>
                         </tr>
@@ -223,6 +172,10 @@
         </section>
 
     </div>
-
+    <footer>
+        <p id="myFooter">
+            all rights reserved &copy; 2018
+        </p>
+    </footer>
 </body>
 </html>
