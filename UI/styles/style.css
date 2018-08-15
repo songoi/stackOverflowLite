@@ -21,6 +21,17 @@
     color: #ffffff;
     align-content: center;
 }
+#userProfilePage{
+    font: 1em/1.5 sans-serif, Arial;
+    background-color: gray;
+    color: #ffffff;
+    align-content: center;
+}
+#profilePageContent{
+    padding: 2% 5% 15% 5%;
+    border: burlywood solid;
+    border-radius: 10%;
+}
 .dashboard{
     padding: 0% 10% 10% 10%;
     margin:auto;
@@ -87,7 +98,14 @@ header ul{
 .navBar__list{
     display: inline;
 }
-
+/* manipulates content in the pages */
+.userProfile__image{
+    width: 20%;
+    height: auto;
+}
+.userProfile__table {
+    margin: 50px 20px 0px 0px;
+}
 #signIn #signUp{
     margin: 20px;
     width: 50%;
@@ -125,6 +143,8 @@ input[type="submit"] {
     text-align: right;
     
 }
+
+/* manipulates the footer */
 #myFooter{
     text-align: center;
     font-size: 20px;
