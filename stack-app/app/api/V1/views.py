@@ -1,18 +1,18 @@
 from flask import make_response, request, jsonify
 
-<<<<<<< Updated upstream
-=======
+
 from app.question import models
 
->>>>>>> Stashed changes
+from stack-app.app.question import models
+
 from flask_api import FlaskAPI
 
 # from app.user import User
 
-app = FlaskAPI(__name__)
+myapp = FlaskAPI(__name__)
 
 
-@app.route('/api/v1/users', methods=["GET"])
+@myapp.route('/api/v1/users', methods=["GET"])
 def home():
     pass
 # def list_users():
