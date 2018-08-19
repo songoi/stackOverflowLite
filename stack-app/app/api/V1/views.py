@@ -1,5 +1,8 @@
 from flask import make_response, request, jsonify
 
+
+from app.question import models
+
 from stack-app.app.question import models
 
 from flask_api import FlaskAPI
@@ -11,7 +14,7 @@ myapp = FlaskAPI(__name__)
 
 @myapp.route('/api/v1/users', methods=["GET"])
 def home():
-    return "this worked"
+    pass
 # def list_users():
 #      """
 #        Instantiate the User Class
