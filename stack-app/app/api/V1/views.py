@@ -1,5 +1,10 @@
 from flask import make_response, request, jsonify
 
+<<<<<<< Updated upstream
+=======
+from app.question import models
+
+>>>>>>> Stashed changes
 from flask_api import FlaskAPI
 
 # from app.user import User
@@ -9,7 +14,7 @@ app = FlaskAPI(__name__)
 
 @app.route('/api/v1/users', methods=["GET"])
 def home():
-    return "this worked"
+    pass
 # def list_users():
 #      """
 #        Instantiate the User Class
