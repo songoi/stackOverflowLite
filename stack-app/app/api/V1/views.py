@@ -9,19 +9,11 @@ from flask_api import FlaskAPI
 myapp = FlaskAPI(__name__)
 
 
-@myapp.route('/api/v1/users', methods = ["POST", "GET"])
+@myapp.route('/api/v1/users', methods = ["POST"])
 def create_user():
-     """
-       Instantiate the User Class
-     """
-     user_maker = User()
-     """
-      Register the user so that the users list inside the User model can have users
-     """   
+     user_maker = User() 
      user_maker.register_user("kim", "kim@example.com", "birthday", "userpassword")
-     """
-     Get the users now through the class method
-     """
+
      users = user_maker.get_users()
      return make_response(jsonify( { "users" : users } ))
 
