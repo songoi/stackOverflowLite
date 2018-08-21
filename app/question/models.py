@@ -6,8 +6,7 @@ question_list = [
                 {
                     "answer_id" : 1,
                     "answer" : "205,524km"
-                } 
-                ]
+                } ]
             }
         ]
 
@@ -42,10 +41,10 @@ class Question(object):
 
         for item in question_list:
             if item["post_id"] == question_id: 
-                print("deleting question ", item )
                 question_list.remove(item)
+                return question_list
 
-            return question_list
+            return "No question with id {}".format(str(question_id))
 
     def answer(self, your_answer, question_id):
         current_question = self.get_question_byID(question_id)

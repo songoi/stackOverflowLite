@@ -8,6 +8,9 @@ from flask_api import FlaskAPI
 
 myapp = FlaskAPI(__name__)
 
+@myapp.route('/')
+def home():
+    return jsonify({"message" : "Welcome to StackOverflow Lite API"})
 
 @myapp.route('/api/v1/users', methods = ["POST"])
 def create_user():
@@ -42,5 +45,5 @@ def get_question(question_id):
         new_answer = request.data.get("your_answer")
         return make_response(jsonify( { "question":  questions_object.answer(new_answer,question_id)} ))
     
-    if request.method == 'DELETE':      
+    if request.method == 'DELETE':  
         return make_response(jsonify( { "questions": questions_object.del_question("question_id")} ))
