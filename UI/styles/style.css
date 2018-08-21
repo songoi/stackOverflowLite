@@ -77,7 +77,7 @@
     border: 2px rgb(100, 100, 30) solid;
 }
 
-.navBar__heading{
+.navBar__heading {
     text-align: left;
     padding: 0px 0px 0px 5px;
     font-size: 3em
@@ -143,6 +143,17 @@ input[type="submit"] {
     text-align: right;
     
 }
+.collapse{
+    background-color: rgb(205, 195, 221);
+    padding: 8px;
+}
+.collapse_content{
+   padding:0px 0px 8px 0px;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
 
 /* manipulates the footer */
 #myFooter{
