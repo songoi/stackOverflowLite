@@ -1,4 +1,4 @@
-from flask import make_response, request, url_for, jsonify
+from flask import make_response, request, jsonify
 
 from app.user.user_model import User
 

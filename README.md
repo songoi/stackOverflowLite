@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+[![Build Status](https://travis-ci.org/songoi/stackOverflowLite.svg?branch=master)](https://travis-ci.org/songoi/stackOverflowLite)
 
-You can use the [editor on GitHub](https://github.com/songoi/stackOverflowLite/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[![Coverage Status](https://coveralls.io/repos/github/songoi/stackOverflowLite/badge.svg?branch=master)](https://coveralls.io/github/songoi/stackOverflowLite?branch=master)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
-### Markdown
+<a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
+Stack Overflow API
+ A platform where you can ask questions, get answers to a specific question.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/songoi/stackOverflowLite/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ 

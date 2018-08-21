@@ -1,5 +1,8 @@
-/env    
+venv/    
 /vscode
 .vscode
 __pycache__/
 .pytest_cache/
+*.pyc
+.cache/
+htmlcov/
