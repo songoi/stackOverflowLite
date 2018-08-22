@@ -7,7 +7,7 @@
     <title>Profile|Stack Overflow-lite</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles/style.css">
-    <script src="design.js"></script>
+    <script src="../scripts/design.js"></script>
 </head>
 <body id="userProfilePage">
     <header class="mainPage__header">
@@ -18,7 +18,7 @@
             <nav class="navBar__ulList">
                 <ul>
                     <li class="navBar__list"><a class="navBar__list--listItem" href="index.html">Home</a></li>
-                    <li class="navBar__list"><a class="navBar__list--listItem" href="dashboard.html">Dashboard</a></li>
+                    <li class="navBar__list"><a class="navBar__list--listItem" href="../html/dashboard.html">Dashboard</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,81 +38,80 @@
                     </tbody>
                 </table>
                 <nav>
-                    <button class="userProfile__button" type="button">Recently Asked Questions on stack</button>
+                    <a href="../html/dashboard.html">Recently Asked Questions on stack</a>
                 </nav>
             </div>
         </div>
 
         <div class="userProfile__posts" class="Profile__column">
             <div class="userProfile__questions">
-                <table>
-                    <tbody>
-                        <th class="columnHead">Questions</th>
-                        <tr class="columnData">
-                            <td>
-                                contains questions asked by the user overtime<br>
-                                <button class="userProfile__button" type="button">view answers</button> <button class="userProfile__button" type="button">Delete question</button> 
-                            </td>
-                        </tr>
-                        
-                        <tr class="columnData">
-                            <td>
-                                contains questions asked by the user overtime<br>
-                                <button class="userProfile__button" type="button">view answers</button> <button class="userProfile__button" type="button">Delete question</button> 
-                            </td>
-                        </tr>
-                        
-                        <tr class="columnData">
-                            <td>
-                                contains questions asked by the user overtime<br>
-                                <button class="userProfile__button" type="button">view answers</button> <button class="userProfile__button" type="button">Delete question</button> 
-                            </td>
-                        </tr>
+                <h1>Questions you aksed:</h1>
+                <div>
+                    <div>
+                        <p class="question">what is the Finobacci sequence?</p>
+                        <button class="collapser" onclick="showContent(this)">view Answers</button> 
+                        <div class="collapse_content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, diznissim</p>
+                            <button class="userProfile__button" type="button">Accept answer</button>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                            <button class="userProfile__button" type="button">Accept answer</button>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                            <button class="userProfile__button" type="button">Accept answer</button>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                            <button class="userProfile__button" type="button">Accept answer</button>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                            <button class="userProfile__button" type="button">Accept answer</button>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                            <button class="userProfile__button" type="button">Accept answer</button> <br> <br>
+                            <button class="userProfile__button" type="button">Delete question</button> 
+                        </div>
+                    </div>
+                </div>
 
-                        <tr class="columnData">
-                            <td>
-                                contains questions asked by the user overtime<br>
-                                <button class="userProfile__button" type="button">view answers</button> <button class="userProfile__button" type="button">Delete question</button> 
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
-
-            </div>
-            <div class="userProfile__answers" class="Profile__column">
-                <table>
-                    <tbody>
-                        <th class="columnHead">Answers</th>
-                        <tr>
-                            <td>
-                                contains answer on a question asked by the user<br>
-                                <button class="userProfile__button" type="button">Accept answer</button> 
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                contains answer on a question asked by the user<br>
-                                <button class="userProfile__button" type="button">Accept answer</button> 
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                contains answer on a question asked by the user<br>
-                                <button class="userProfile__button" type="button">Accept answer</button> 
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                contains answer on a question asked by the user<br>
-                                <button class="userProfile__button" type="button">Accept answer</button> 
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div>
+                    <div>
+                        <p class="question">what is the Finobacci sequence?</p>
+                        <button class="collapser" onclick="showContent(this)">view Answers</button> 
+                        <div class="collapse_content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, diznissim</p>
+                            <button class="userProfile__button" type="button">Accept answer</button>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                            <button class="userProfile__button" type="button">Accept answer</button>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                            <button class="userProfile__button" type="button">Accept answer</button>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                            <button class="userProfile__button" type="button">Accept answer</button>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                            <button class="userProfile__button" type="button">Accept answer</button>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                            <button class="userProfile__button" type="button">Accept answer</button> <br> <br>
+                            <button class="userProfile__button" type="button">Delete question</button> 
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                    <p class="question">what is the Finobacci sequence?</p>
+                    <button class="collapser" onclick="showContent(this)">view Answers</button> 
+                    <div class="collapse_content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, diznissim</p>
+                        <button class="userProfile__button" type="button">Accept answer</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                        <button class="userProfile__button" type="button">Accept answer</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                        <button class="userProfile__button" type="button">Accept answer</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                        <button class="userProfile__button" type="button">Accept answer</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                        <button class="userProfile__button" type="button">Accept answer</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est metus, dignissim</p>
+                        <button class="userProfile__button" type="button">Accept answer</button> <br> <br>
+                        <button class="userProfile__button" type="button">Delete question</button> 
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <footer>
         <p id="myFooter">
             all rights reserved &copy; 2018
