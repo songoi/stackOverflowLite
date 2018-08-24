@@ -7,7 +7,7 @@ from app.api.V1.views import myapp
 
 
 
-class TestUserEndpoints(unittest.TestCase):   
+class Test_questions(unittest.TestCase):   
     user_endpoint = '/api/v1/questions'
     myapp = myapp.test_client()
 
