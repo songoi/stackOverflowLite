@@ -5,13 +5,31 @@ A platform where you can ask questions, get answers to a specific question.
 User interface is built with HTML and CSS.
 
 **EndPoint**  
-GET /questions  Fetch all questions
+my endpoints
 
-GET /questions/<questionId> Fetch a specific question
+create User:
+POST	api/v1/user/new_user
 
-POST /questions     Add a question
+user login:
+POST	api/v1/login
 
-POST /questions/<questionId>/answers    Add an answer
+questions:
+GET	api/v1/questions
+	- get all questions
+
+POST	api/v1/questions
+	- post your question. Provide your_question
 
 
+GET	api/v1/questions/<int:question_id>
+	- get a specific question by question_id
+
+DELETE	api/v1/questions/<int:question_id>
+	- delete a specific question by giving its ID
+
+answers:
+POST	api/v1/questions/<int:question_id>/answer
+	- post an answer by specifying the question_id and your_answer
+
+GET	api/v1/questions/<int:question_id>/answer
 
