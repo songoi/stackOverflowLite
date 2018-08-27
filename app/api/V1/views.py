@@ -4,13 +4,18 @@ from functools import wraps
 
 from app.user.user_model import User
 
+<<<<<<< HEAD
 from app.question.question_models import Question, Check_user_input
+=======
+from app.question.question_models import Question
+>>>>>>> feedback implementation
 
 from flask_api import FlaskAPI
 
 myapp = FlaskAPI(__name__)
 
 
+<<<<<<< HEAD
 
 questions_object = Question()
 
@@ -18,6 +23,11 @@ validity = Check_user_input()
 
 
 
+=======
+@myapp.route('/api/v1/questions', methods = ["GET", "POST"])
+def list_all_questions():
+    questions_object = Question()
+>>>>>>> feedback implementation
 
 @myapp.route('/')
 def home():
@@ -30,6 +40,7 @@ def list_question():
         all_questions = questions_object.get_questions()
         return make_response(jsonify( { "questions": all_questions} ))
 
+<<<<<<< HEAD
     if request.method == "POST":   
         req_data = request.get_json()     
         new_question = req_data["question"]
@@ -38,10 +49,20 @@ def list_question():
         
         return make_response(jsonify({"question": response}))
 
+=======
+    if request.method == 'POST':
+        req_data = request.get_json()
+        new_question = req_data['your_question']
+
+        questions_object.create_question(new_question)
+    
+        return make_response(jsonify({"questions": questions_object.get_questions()}))
+>>>>>>> feedback implementation
 
 @myapp.route('/api/v1/questions/<int:question_id>', methods = ["GET", "DELETE"])
 def get_question(question_id):
 
+<<<<<<< HEAD
     if request.method == "GET":
         response = questions_object.get_question_by_id(question_id)
         return make_response(jsonify( { "question": response} ))
@@ -89,3 +110,21 @@ def authorize(usermail, userpassword):
         return make_response(jsonify( { "message" : "log in successful" } ))
     
     return make_response(jsonify( { "message" : "wrong user credentials" } ))
+=======
+    if request.method == 'GET':
+        querried_question = questions_object.get_question_by_id(question_id)
+        return make_response(jsonify( { "question": querried_question} ))
+    
+    if request.method == 'DELETE':      
+        return make_response(jsonify( { "questions": questions_object.del_question("question_id")} ))
+
+
+
+@myapp.route('/api/v1/questions/<int:question_id>/answer', methods = ['POST'])
+def post_answer(question_id):
+
+    req_data = get_json()
+    new_answer = request.data.get("your_answer")
+    return make_response(jsonify( { "question":  questions_object.answer(new_answer,question_id)} ))
+    
+>>>>>>> feedback implementation
