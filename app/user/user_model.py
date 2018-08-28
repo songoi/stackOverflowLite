@@ -1,7 +1,4 @@
 class User(object):
-    def __init__(self):
-        self.users_list = []
-
     def get_users(self):
         return self.users_list
 
