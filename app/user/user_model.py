@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 user_list = [
     {
         "mail" : "donald@duck.com",
@@ -9,6 +10,9 @@ user_list = [
 ]
 
 class User(object): 
+=======
+class User(object):
+>>>>>>> Handle answer logic
     def get_users(self):
         return users_list
 
