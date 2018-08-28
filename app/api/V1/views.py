@@ -25,10 +25,11 @@ validity = Check_user_input()
 
 =======
 @myapp.route('/api/v1/questions', methods = ["GET", "POST"])
-def list_all_questions():
+def list_questions(the_question = None):
     questions_object = Question()
 >>>>>>> feedback implementation
 
+<<<<<<< HEAD
 @myapp.route('/')
 def home():
     return jsonify({"message" : "Welcome to StackOverflow Lite API"})
@@ -38,6 +39,11 @@ def list_question():
     
     if request.method == "GET":
         all_questions = questions_object.get_questions()
+=======
+    if request.method == 'GET':
+        all_questions = questions_object.get_questions()
+       
+>>>>>>> Endpoints and their tests
         return make_response(jsonify( { "questions": all_questions} ))
 
 <<<<<<< HEAD
@@ -52,15 +58,22 @@ def list_question():
 =======
     if request.method == 'POST':
         req_data = request.get_json()
-        new_question = req_data['your_question']
-
+           
+        new_question = req_data.get('question')
+        
         questions_object.create_question(new_question)
     
         return make_response(jsonify({"questions": questions_object.get_questions()}))
 >>>>>>> feedback implementation
 
+<<<<<<< HEAD
 @myapp.route('/api/v1/questions/<int:question_id>', methods = ["GET", "DELETE"])
 def get_question(question_id):
+=======
+@myapp.route('/api/v1/questions/<int:question_id>', methods = ['GET', 'POST', 'DELETE'])
+def get_question(question_id = None):
+    questions_object = Question()
+>>>>>>> Endpoints and their tests
 
 <<<<<<< HEAD
     if request.method == "GET":
@@ -116,15 +129,20 @@ def authorize(usermail, userpassword):
         return make_response(jsonify( { "question": querried_question} ))
     
     if request.method == 'DELETE':      
-        return make_response(jsonify( { "questions": questions_object.del_question("question_id")} ))
+        return make_response(jsonify( { "questions": questions_object.del_question(question_id)} ))
 
 
 
 @myapp.route('/api/v1/questions/<int:question_id>/answer', methods = ['POST'])
-def post_answer(question_id):
-
+def post_answer(question_id = None, answer):
+    answer_object = Answer()
     req_data = get_json()
     new_answer = request.data.get("your_answer")
+<<<<<<< HEAD
     return make_response(jsonify( { "question":  questions_object.answer(new_answer,question_id)} ))
     
 >>>>>>> feedback implementation
+=======
+    return make_response(jsonify( { "question":  answer_object.post_answer(new_answer,question_id)} ))
+    
+>>>>>>> Endpoints and their tests
