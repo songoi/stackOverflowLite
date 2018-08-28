@@ -134,9 +134,10 @@ def authorize(usermail, userpassword):
 
 
 @myapp.route('/api/v1/questions/<int:question_id>/answer', methods = ['POST'])
-def post_answer(question_id = None, answer):
+def post_answer(answer, question_id = None):
     answer_object = Answer()
     req_data = get_json()
+<<<<<<< HEAD
     new_answer = request.data.get("your_answer")
 <<<<<<< HEAD
     return make_response(jsonify( { "question":  questions_object.answer(new_answer,question_id)} ))
@@ -146,3 +147,8 @@ def post_answer(question_id = None, answer):
     return make_response(jsonify( { "question":  answer_object.post_answer(new_answer,question_id)} ))
     
 >>>>>>> Endpoints and their tests
+=======
+    new_answer = request.data.get("answer")
+    return make_response(jsonify( { "answer":  answer_object.post_answer(new_answer,question_id)} ))
+    
+>>>>>>> Updates tests and route
