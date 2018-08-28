@@ -41,9 +41,9 @@ def get_question(question_id = None):
 
 
 @myapp.route('/api/v1/questions/<int:question_id>/answer', methods = ['POST'])
-def post_answer(question_id = None, answer):
+def post_answer(answer, question_id = None):
     answer_object = Answer()
     req_data = get_json()
-    new_answer = request.data.get("your_answer")
-    return make_response(jsonify( { "question":  answer_object.post_answer(new_answer,question_id)} ))
+    new_answer = request.data.get("answer")
+    return make_response(jsonify( { "answer":  answer_object.post_answer(new_answer,question_id)} ))
     
