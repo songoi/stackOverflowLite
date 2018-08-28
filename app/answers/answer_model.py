@@ -1,4 +1,4 @@
-class Answer(object):
+class Answer(Question):
 def answer(self, your_answer, question_id):
         current_question = self.get_question_byID(question_id)
         current_answers = current_question["answer"]
