@@ -1,4 +1,4 @@
-from flask import g, make_response, request, jsonify, redirect, url_for
+from flask import make_response, request, jsonify, redirect, url_for
 
 from functools import wraps
 
