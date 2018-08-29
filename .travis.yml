@@ -11,5 +11,5 @@ install:
 script:
   - py.test --cov=app
 
-after-success:
+after_success:
   - coveralls
