@@ -1,14 +1,15 @@
-language: python
+language: 
+  - python
 
 python:
-  - '3.6'
+  - "3.6"
 
 install:
-  - pip install -r requirements
-  - install coverage
+  - pip install -r requirements.txt
+  - pip install coveralls
 
 script:
-  - pytest
+  - py.test --cov=app
 
-after-script:
-  - coveralls
+after_success:
+- coveralls

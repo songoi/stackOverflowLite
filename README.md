@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+[![Build Status](https://travis-ci.org/songoi/stackOverflowLite.svg?branch=api-v1)](https://travis-ci.org/songoi/stackOverflowLite) [![Coverage Status](https://coveralls.io/repos/github/songoi/stackOverflowLite/badge.svg?branch=api-v1)](https://coveralls.io/github/songoi/stackOverflowLite?branch=api-v1)    [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)    [![Test Coverage](https://api.codeclimate.com/v1/badges/d1f032c3c8a41327871c/test_coverage)](https://codeclimate.com/github/songoi/stackOverflowLite/test_coverage)
 
-You can use the [editor on GitHub](https://github.com/songoi/stackOverflowLite/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+#StackOverflow-lite  
+A platform where people can ask questions and provide answers
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#API
+challenge two sets up API endpoints that save data in a data structure. the endpoints can do the following:
+ - get all questions
+ - get a question
+ - post a question
+ - post an answer to a question
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/songoi/stackOverflowLite/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ #Endpoint | Functionality
+ GET /api/v1/questions | fetch all questions
+ POST /api/v1/questions | post a new question
+ GET /api/v1/questions/<int:question_id> | fetch a specific question
+ DELETE /api/v1/questions/<int:question_id> | delete a specific question
+ POST /api/v1/questions/<int:question_id>/answer | post an answer to question
