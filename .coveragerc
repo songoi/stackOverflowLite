@@ -9,7 +9,7 @@ omit =
     .cache/
     htmlcov/
     htmlcov/
-    user/
+    user/*
 [report]
 ignore_errors = True
 
