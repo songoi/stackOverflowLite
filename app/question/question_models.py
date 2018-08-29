@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 question_list = [
 <<<<<<< HEAD
             {
@@ -12,6 +13,9 @@ question_list = [
     }
 ]
 >>>>>>> feedback implementation
+=======
+question_list = []
+>>>>>>> Complete answers endpoint
 
 class Question(object):
     def get_questions(self):

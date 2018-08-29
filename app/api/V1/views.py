@@ -10,10 +10,15 @@ from app.question.question_models import Question, Check_user_input
 from app.question.question_models import Question
 >>>>>>> feedback implementation
 
+from app.answers.answer_model import Answer
+
 from flask_api import FlaskAPI
 
 myapp = FlaskAPI(__name__)
 
+@myapp.route('/')
+def home():
+    return jsonify({"message" : "Welcome to StackOverflow Lite API"})
 
 <<<<<<< HEAD
 
@@ -134,8 +139,9 @@ def authorize(usermail, userpassword):
 
 
 @myapp.route('/api/v1/questions/<int:question_id>/answer', methods = ['POST'])
-def post_answer(answer, question_id = None):
+def post_answer(answer = None, question_id = None):
     answer_object = Answer()
+<<<<<<< HEAD
     req_data = get_json()
 <<<<<<< HEAD
     new_answer = request.data.get("your_answer")
@@ -152,3 +158,9 @@ def post_answer(answer, question_id = None):
     return make_response(jsonify( { "answer":  answer_object.post_answer(new_answer,question_id)} ))
     
 >>>>>>> Updates tests and route
+=======
+    req_data = request.get_json()
+    new_answer = req_data.get("answer")
+    print (new_answer)
+    return make_response(jsonify( { "answer":  answer_object.post_answer(new_answer,question_id)}))
+>>>>>>> Complete answers endpoint
