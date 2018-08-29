@@ -7,7 +7,9 @@ omit =
     .pytest_cache/
     *.pyc
     .cache/
-
+    htmlcov/
+    htmlcov/
+    user/
 [report]
 ignore_errors = True
 

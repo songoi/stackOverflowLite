@@ -1,14 +1,6 @@
-user_list = [
-    {
-        "mail" : "donald@duck.com",
-        "name": "Donald Duck",
-        "birthday" : "12.4.1988",
-        "userID" : 1,
-        "password" : "thelegendliveson"
-    }
-]
+user_list = []
 
-class User(object): 
+class User(object):
     def get_users(self):
         return users_list
 
