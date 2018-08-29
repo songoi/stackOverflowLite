@@ -7,6 +7,10 @@ omit =
     .pytest_cache/
     *.pyc
     .cache/
+<<<<<<< HEAD
+=======
+    htmlcov/
+>>>>>>> Add continuous intergration and heroku build
 
 [report]
 ignore_errors = True
