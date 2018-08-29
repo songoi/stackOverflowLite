@@ -26,3 +26,5 @@ challenge two sets up API endpoints that save data in a data structure. the endp
 
  while posting a question: on postman, use raw JSON (application/json) with the key: "question"
  while posting an answer: on postman, use raw JSON (application/json) with the keys: "answer" and "question_id"
+
+ Access the API on [Heroku link] (https://stack-overflow-lite-api.herokuapp.com/)
