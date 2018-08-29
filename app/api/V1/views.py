@@ -5,10 +5,14 @@ from functools import wraps
 from app.user.user_model import User
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 from app.question.question_models import Question, Check_user_input
 =======
 from app.question.question_models import Question
 >>>>>>> feedback implementation
+=======
+from app.question.question_models import Question
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
 
 from app.answers.answer_model import Answer
 
@@ -19,6 +23,7 @@ myapp = FlaskAPI(__name__)
 @myapp.route('/')
 def home():
     return jsonify({"message" : "Welcome to StackOverflow Lite API"})
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
@@ -27,6 +32,8 @@ questions_object = Question()
 validity = Check_user_input()
 
 
+=======
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
 
 =======
 @myapp.route('/api/v1/questions', methods = ["GET", "POST"])
@@ -48,7 +55,10 @@ def list_question():
     if request.method == 'GET':
         all_questions = questions_object.get_questions()
        
+<<<<<<< HEAD
 >>>>>>> Endpoints and their tests
+=======
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
         return make_response(jsonify( { "questions": all_questions} ))
 
 <<<<<<< HEAD
@@ -72,9 +82,12 @@ def list_question():
 >>>>>>> feedback implementation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @myapp.route('/api/v1/questions/<int:question_id>', methods = ["GET", "DELETE"])
 def get_question(question_id):
 =======
+=======
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
 @myapp.route('/api/v1/questions/<int:question_id>', methods = ['GET', 'POST', 'DELETE'])
 def get_question(question_id = None):
     questions_object = Question()
@@ -142,6 +155,7 @@ def authorize(usermail, userpassword):
 def post_answer(answer = None, question_id = None):
     answer_object = Answer()
 <<<<<<< HEAD
+<<<<<<< HEAD
     req_data = get_json()
 <<<<<<< HEAD
     new_answer = request.data.get("your_answer")
@@ -164,3 +178,9 @@ def post_answer(answer = None, question_id = None):
     print (new_answer)
     return make_response(jsonify( { "answer":  answer_object.post_answer(new_answer,question_id)}))
 >>>>>>> Complete answers endpoint
+=======
+    req_data = request.get_json()
+    new_answer = req_data.get("answer")
+    print (new_answer)
+    return make_response(jsonify( { "answer":  answer_object.post_answer(new_answer,question_id)}))
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 question_list = [
 <<<<<<< HEAD
             {
@@ -16,12 +17,16 @@ question_list = [
 =======
 question_list = []
 >>>>>>> Complete answers endpoint
+=======
+question_list = []
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
 
 class Question(object):
     def get_questions(self):
         return question_list
 
     def get_question_by_id(self, question_id):
+<<<<<<< HEAD
 <<<<<<< HEAD
         for item in question_list:
             if item["post_id"] == question_id:
@@ -35,11 +40,16 @@ class Question(object):
             return "No question with id {}".format(str(question_id))
 >>>>>>> feedback implementation
 =======
+=======
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
         question =  [item for item in question_list if item["post_id"] == question_id]
         if len(question) == 0:
             return "No question with id {}".format(str(question_id))
         return question
+<<<<<<< HEAD
 >>>>>>> Handle question logic
+=======
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
 
 
     def create_question(self, the_question):
@@ -49,14 +59,19 @@ class Question(object):
         new_question = {
             "post_id" : id,
 <<<<<<< HEAD
+<<<<<<< HEAD
             "question" : the_question        
 =======
             "question" : the_question,        
 >>>>>>> feedback implementation
+=======
+            "question" : the_question,        
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
         }
         
         question_list.append(new_question)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         return question_list
@@ -90,6 +105,9 @@ class Check_user_input(object):
 =======
         return self.get_question_by_id(id)
 >>>>>>> Handle question logic
+=======
+        return self.get_question_by_id(id)
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
 
     def del_question(self, question_id):      
         if question_id >len(question_list) or question_id <= 0:
@@ -103,5 +121,8 @@ class Check_user_input(object):
         
 
     
+<<<<<<< HEAD
 >>>>>>> feedback implementation
+=======
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
 

@@ -3,14 +3,21 @@ venv/
 .vscode
 __pycache__/
 <<<<<<< HEAD
+<<<<<<< HEAD
 .pytest_cache/
 *.pyc
 .cache/
 htmlcov/
 =======
+=======
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
 htmlcov/
 .pytest_cache/
 __init__.pyc
 *.pyc
+<<<<<<< HEAD
 .cache/
 >>>>>>> feedback implementation
+=======
+.cache/
+>>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
