@@ -39,18 +39,22 @@ class TestQuestion(BaseTest):
         self.assertEquals(response.status_code, 200)
         data = json.loads(response.data.decode('utf-8'))
         test_data = data.get("question")
-        self.assertEqual(len(test_data), 1)
+        self.assertNotEqual(test_data, None)
 
     def test_delete_question(self):
-        response = self.myapp.delete(self.user_endpoint+ '/2')
+        response = self.myapp.delete(self.user_endpoint+ '/1')
         self.assertEquals(response.status_code, 200)
         data = json.loads(response.data.decode('utf-8'))
         test_data = data.get("question")
         self.assertNotEqual(self.new_question, test_data)
     
-    # def test_post_answer(self):
-    #     response = self.myapp.post(self.user_endpoint+ '/2/answer',
-    #                                content_type='application/json',
-    #                                data=json.dumps(dict(answer = self.new_answer)))
+    def test_post_answer(self):
+        response = self.myapp.post(self.user_endpoint+ '/1/answer',
+                                   content_type='application/json',
+                                   data=json.dumps(dict(answer = self.new_answer)))
 
-    #     self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 200)
+        question_id = 1
+        data = json.loads(response.data.decode('utf-8'))
+        test_data = data.get("answer")
+        self.assertIsNotNone(test_data)

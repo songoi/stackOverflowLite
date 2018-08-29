@@ -4,10 +4,15 @@ from app.user.user_model import User
 
 from app.question.question_models import Question
 
+from app.answers.answer_model import Answer
+
 from flask_api import FlaskAPI
 
 myapp = FlaskAPI(__name__)
 
+@myapp.route('/')
+def home():
+    return jsonify({"message" : "Welcome to StackOverflow Lite API"})
 
 @myapp.route('/api/v1/questions', methods = ["GET", "POST"])
 def list_questions(the_question = None):
@@ -41,9 +46,9 @@ def get_question(question_id = None):
 
 
 @myapp.route('/api/v1/questions/<int:question_id>/answer', methods = ['POST'])
-def post_answer(answer, question_id = None):
+def post_answer(answer = None, question_id = None):
     answer_object = Answer()
-    req_data = get_json()
-    new_answer = request.data.get("answer")
-    return make_response(jsonify( { "answer":  answer_object.post_answer(new_answer,question_id)} ))
-    
+    req_data = request.get_json()
+    new_answer = req_data.get("answer")
+    print (new_answer)
+    return make_response(jsonify( { "answer":  answer_object.post_answer(new_answer,question_id)}))

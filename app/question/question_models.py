@@ -1,9 +1,4 @@
-question_list = [
-    {
-        "post_id" : 1,
-        "question" : "whats the distance between the sun and the moon"
-    }
-]
+question_list = []
 
 class Question(object):
     def get_questions(self):
