@@ -1,22 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-user_list = [
-    {
-        "mail" : "donald@duck.com",
-        "name": "Donald Duck",
-        "birthday" : "12.4.1988",
-        "userID" : 1,
-        "password" : "thelegendliveson"
-    }
-]
+user_list = []
 
-class User(object): 
-=======
 class User(object):
->>>>>>> Handle answer logic
-=======
-class User(object):
->>>>>>> c5ab9c3ac5701090fdfeedcda49fb333fb5973f1
     def get_users(self):
         return users_list
 
