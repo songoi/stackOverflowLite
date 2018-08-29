@@ -1,13 +1,15 @@
-# import unittest
+import unittest
 
-# import json
+import json
 
-# from app.api.V1.views import myapp
+from app.api.V1.views import myapp
 
-# class Test_answers(unittest.TestCase):
-#     def test_
+from app.answer.answer_models import Answer, answer_list
+
+class Test_answers(unittest.TestCase):
+    def test_
 
 
 
-# if __name__ == '__main__':
-#     unittest.main()
+if __name__ == '__main__':
+    unittest.main()

@@ -10,7 +10,7 @@ user_list = [
 
 class User(object): 
     def get_users(self):
-        return self.users_list
+        return users_list
 
     def register_user(self, username, usermail, birthday, userpassword):
         self.username = username
@@ -25,7 +25,6 @@ class User(object):
             "birthday" : birthday,
             "userID" : id,
             "password" : userpassword
-
         }
         user_list.append(new_user)
         return new_user
