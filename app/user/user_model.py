@@ -1,30 +1,28 @@
 user_list = []
 
 class User(object):
+    """returns all users"""
     def get_users(self):
-        return users_list
+        return user_list
 
-    def register_user(self, username, usermail, birthday, userpassword):
-        self.username = username
-        self.usermail = usermail
-        self.birthday = birthday
-        self.userpassword = userpassword
+    def register_user(self, data={}):
+        self.username = data.get("username")
+        self.usermail = data.get("usermail")
+        self.userpassword = data.get("userpassword")
 
         id = len(user_list) + 1
         new_user = {
-            "mail" : usermail,
-            "name" : username,
-            "birthday" : birthday,
+            "mail" : self.usermail,
+            "name" : self.username,
             "userID" : id,
-            "password" : userpassword
+            "password" : self.userpassword
         }
         user_list.append(new_user)
         return new_user
 
     def login(self, usermail, userpassword):
-        for user in user_list:
-            if user["mail"] == usermail:
-                if user["password"] == userpassword:
-                    return True
-                else:
-                    return False
+        """check whether the user is in the list"""
+        user = [user for user in user_list if user["mail"] == usermail and user["password"] == userpassword]
+        if len(user) == 1:
+            return True
+        return False

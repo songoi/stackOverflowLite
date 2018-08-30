@@ -32,14 +32,14 @@ class TestQuestion(BaseTest):
                                    data=json.dumps(dict(question = self.new_question)))
         self.assertEqual(response.status_code, 200)
         data = json.loads(response.data.decode('utf-8'))
-        self.assertIn("questions", data)
+        self.assertIn("results", data)
 
     def test_list_questions(self):
 
         response = self.myapp.get(self.user_endpoint)
         self.assertEquals(response.status_code, 200)
         data = json.loads(response.data.decode('utf-8'))
-        self.assertIn("questions", data)
+        self.assertIn("results", data)
      
 
     def test_get_question(self):
@@ -55,7 +55,8 @@ class TestQuestion(BaseTest):
         data = json.loads(response.data.decode('utf-8'))
         test_data = data.get("question")
         self.assertNotEqual(self.new_question, test_data)
-    
+
+class Test_answer(BaseTest):
     def test_post_answer(self):
         response = self.myapp.post(self.user_endpoint+ '/1/answer',
                                    content_type='application/json',
@@ -63,5 +64,8 @@ class TestQuestion(BaseTest):
 
         self.assertEqual(response.status_code, 200)
         data = json.loads(response.data.decode('utf-8'))
-        test_data = data.get("answer")
+        test_data = data.get("results")
         self.assertIsNotNone(test_data)
+
+class Test-user(BaseTest):
+    def pass

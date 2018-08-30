@@ -11,17 +11,21 @@ class Answer(Question):
         """
         self.your_answer = answer
         self.question_id = question_id
-        
+        """find the question that the answer is for if none, return message"""
         current_question = self.get_question_by_id(question_id)
-        answer_id = len(answer_list) + 1
-        new_answer = {
-            "question_id":question_id,
-            "answer_id": answer_id,
-            "answer": answer
-        }
-        answer_list.append(new_answer)
-        
-        return self.get_answers_to_question(question_id)
+        if current_question == "No question with id {}".format(str(question_id)):
+            return "No question with id {}".format(str(question_id))
+
+        else:
+            answer_id = len(answer_list) + 1
+            new_answer = {
+                "question_id":question_id,
+                "answer_id": answer_id,
+                "answer": answer
+            }
+            answer_list.append(new_answer)
+            
+            return self.get_answers_to_question(question_id)
 
     def get_answers_to_question(self, question_id):
         all_answers = [item for item in answer_list if item["question_id"] == question_id]
@@ -42,4 +46,5 @@ class Answer(Question):
                     answer_list.remove(item)
                 return self.get_answers_to_question(question_id)
         return "No question with id {}".format(str(question_id))
+
 
