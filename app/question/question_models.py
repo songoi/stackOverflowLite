@@ -65,7 +65,7 @@ class Question(object):
     def edit_question(self, question_id, new_question):
         question_to_edit = self.get_question_by_id(question_id)
         if question_to_edit == "No question with id {}".format(str(question_id)):
-            return question_to_edit
+            return "No question with id {} available to be modified".format(str(question_id)) 
         else:
             question_to_edit[0]["question"] = new_question
             return "Edit to the question successful"
