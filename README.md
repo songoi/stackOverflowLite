@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/songoi/stackOverflowLite.svg?branch=dev-api)](https://travis-ci.org/songoi/stackOverflowLite) [![Coverage Status](https://coveralls.io/repos/github/songoi/stackOverflowLite/badge.svg?branch=dev-api)](https://coveralls.io/github/songoi/stackOverflowLite?branch=api-v1)    [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)  
+[![Build Status](https://travis-ci.org/songoi/stackOverflowLite.svg?branch=dev-api)](https://travis-ci.org/songoi/stackOverflowLite) [![Coverage Status](https://coveralls.io/repos/github/songoi/stackOverflowLite/badge.svg?branch=api-v1)](https://coveralls.io/github/songoi/stackOverflowLite?branch=api-v1)    [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)  
 
 **StackOverflow-lite**  
 A platform where people can ask questions and provide answers
@@ -26,12 +26,11 @@ challenge two sets up API endpoints that save data in a data structure. the endp
  GET /api/v1/questions/<int:question_id> | fetch a specific question|
  PUT / /api/v1/questions/<int:question_id> | edit an existing question | "the_question", "question_id"
  DELETE /api/v1/questions/<int:question_id> | delete a specific question |
- POST /api/v1/questions/<int:question_id>/answer | post an answer to question | "answer"
+ POST /api/v1/questions/<int:question_id>/answer | post an answer to question | "answer" "question_id"
  GET /api/v1/questions/<int:question_id>/answer| get all answers to a question |
  DELET //api/v1/questions/<int:question_id>/answer | delete an answer | "answer_id"
 
 
- while posting a question: on postman, use raw JSON (application/json) with the key: "question"
- while posting an answer: on postman, use raw JSON (application/json) with the keys: "answer" and "question_id"
+ while using POST on postman, use raw JSON (application/json)"
 
  Access the API on [Heroku link] (https://stack-overflow-lite-api.herokuapp.com/)
