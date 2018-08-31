@@ -7,21 +7,28 @@ A platform where people can ask questions and provide answers
 challenge two sets up API endpoints that save data in a data structure. the endpoints can do the following:
  - get all questions
  - get a question
+ - delete a question
  - post a question
+ - edit a posted question
  - post an answer to a question
+ - fetch all answers to a question
+ - delete an answer
 
 **How to Set up:**
 - In a virtual environment, install requirements.txt file
 - run server using python run.py runserver
 - use postman to test the endpoints by using the following endpoints
 
- #Endpoint | Functionality
- -----------|------------|
- GET /api/v1/questions | fetch all questions
- POST /api/v1/questions | post a new question
- GET /api/v1/questions/<int:question_id> | fetch a specific question
- DELETE /api/v1/questions/<int:question_id> | delete a specific question
- POST /api/v1/questions/<int:question_id>/answer | post an answer to question
+ #Endpoint | Functionality| input
+ -----------|------------|-------|
+ GET /api/v1/questions | fetch all questions |
+ POST /api/v1/questions | post a new question | "question"
+ GET /api/v1/questions/<int:question_id> | fetch a specific question|
+ PUT / /api/v1/questions/<int:question_id> | edit an existing question | "the_question", "question_id"
+ DELETE /api/v1/questions/<int:question_id> | delete a specific question |
+ POST /api/v1/questions/<int:question_id>/answer | post an answer to question | "answer"
+ GET /api/v1/questions/<int:question_id>/answer| get all answers to a question |
+ DELET //api/v1/questions/<int:question_id>/answer | delete an answer | "answer_id"
 
 
  while posting a question: on postman, use raw JSON (application/json) with the key: "question"
